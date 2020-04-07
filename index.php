@@ -74,7 +74,7 @@ if(!isset($_GET['counts'])){
 		echo "<br>$value: ".Numbers_Words::toWords($num,$value);
 
 		$ret =  Numbers_Words::toWords($fnum[0],$value);
-		if (!$fnum[1]){
+		if ($fnum[1]){
 			$ret .=  ' koma '; // point in english
 			$ret .= Numbers_Words::toWords($fnum[1],$value);
 			echo $ret;
